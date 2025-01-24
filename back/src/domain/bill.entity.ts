@@ -1,10 +1,8 @@
-import { Legislator } from "./legislator.entity";
-
 export class Bill {
   constructor(
     public id: number,
     public title: string,
-    public primarySponsorId: Legislator["id"],
+    public primarySponsor: string,
     public supporters: number = 0,
     public opposers: number = 0,
   ) {}
