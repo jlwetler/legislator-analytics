@@ -11,14 +11,10 @@ export interface ILegislator {
 }
 
 export function useGetLegislators() {
-  console.log("useGetLegislators hook chamado");
   return useQuery<ILegislator[], AxiosError>({
     queryKey: ["legislators"],
     queryFn: () => {
-      console.log("Executando queryFn");
-      const response = clientFetchLocalAPI<ILegislator[]>("/legislator");
-      console.log("response do hook: ", response);
-      return response;
+      return clientFetchLocalAPI<ILegislator[]>("/legislator");
     },
     enabled: true,
     retry: 1,
