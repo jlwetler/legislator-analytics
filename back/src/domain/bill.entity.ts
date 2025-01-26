@@ -1,10 +1,11 @@
 export class Bill {
+  private supporters = 0;
+  private opposers = 0;
+
   constructor(
     public id: number,
     public title: string,
     public primarySponsor: string,
-    public supporters: number = 0,
-    public opposers: number = 0,
   ) {}
 
   incrementSupporters() {

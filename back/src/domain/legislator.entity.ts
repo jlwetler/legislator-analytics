@@ -1,6 +1,6 @@
 export class Legislator {
-  public supportedBills = 0;
-  public opposedBills = 0;
+  private supportedBills = 0;
+  private opposedBills = 0;
 
   constructor(
     public id: number,
