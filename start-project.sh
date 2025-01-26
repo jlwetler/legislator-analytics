@@ -18,7 +18,7 @@ cd "$BACKEND_DIR" || exit 1
 yarn install
 
 echo "Running tests..."
-yarn test &  # Run the tests before start 
+yarn test # Run the tests before start 
 
 echo "Starting backend..."
 yarn start &  # Run the backend in the background
