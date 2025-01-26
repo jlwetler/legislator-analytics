@@ -1,5 +1,5 @@
 import { Module } from "@nestjs/common";
-import { AppController } from "./app.controller";
+import { AppController } from "./infra/controller/app.controller";
 import { CsvReaderImpl } from "./infra/repository/csv-reader.repository";
 import GetLegislatorStatistics from "./application/use-case/get-legislator-statistics.use-case";
 import { CSV_READER } from "./application/repository/csv-reader-repository.interface";

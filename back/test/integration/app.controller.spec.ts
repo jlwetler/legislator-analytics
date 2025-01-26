@@ -1,6 +1,6 @@
 import * as request from "supertest";
 import { Test, TestingModule } from "@nestjs/testing";
-import { AppController } from "../../src/app.controller";
+import { AppController } from "../../src/infra/controller/app.controller";
 import { AppModule } from "../../src/app.module";
 import { CSV_READER } from "../../src/application/repository/csv-reader-repository.interface";
 import { CsvReaderMock } from "../mock/csv-reader-mock";

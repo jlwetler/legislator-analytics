@@ -1,6 +1,6 @@
 import { Controller, Get } from "@nestjs/common";
-import GetLegislatorStatistics from "./application/use-case/get-legislator-statistics.use-case";
-import GetBillStatistics from "./application/use-case/get-bill-statistics.use-case";
+import GetLegislatorStatistics from "../../application/use-case/get-legislator-statistics.use-case";
+import GetBillStatistics from "../../application/use-case/get-bill-statistics.use-case";
 
 @Controller()
 export class AppController {
